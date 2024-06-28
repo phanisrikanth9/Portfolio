@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/f1c5c5c132.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="c:\Users\SRIKANTH\Desktop\Project\images\srikanth-high-resolution-logo.png" class="logo" alt="logo">
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                   <!--<li><a href="#portfolio">Portfolio</a></li>-->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <h1>Hi, I am Phani Srikanth Samayam</h1>
+                 <p>This is my Portfolio</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="c:\Users\SRIKANTH\Desktop\Project\images\IMG_20240628_213134.jpg" alt="about" width="450px" height="850px">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I am currently pursuing my B Tech degree from Sreenidhi Institute of Science and Technology. I excel in problem-solving and have proficiency in various programming languages, along with Data Structures and Algorithms. A quick learner with a positive attitude, I possess outstanding communication, teamwork, and leadership skills, facilitating effective collaboration with teams.
+
+                            In terms of my career objective, I aim to secure a position in an organization that provides a conducive environment for me to demonstrate my skills and apply my technical knowledge effectively.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab1" id="skills">
+                            <ul>
+                                <li><span>Programming in PYTHON,JAVA & C</span><br></li>
+                                <li><span>Proficiency in HTML, CSS</span><br></li>
+                                <li><span>Basics of Programming in C++</span><br></li>
+                                <li><span> Adequate Knowledge in SQL</span><br></li>
+                                <li><span>Good knowledge in Data structures and Algorithms</span><br></li>
+                                <li><span> Good Communication and Problem solving skills</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Amazon AWS Internship</span><br>SEP 2023 - NOV 2023</li>
+                                <li><span>Codsoft Data Science Internship</span><br>JUN 2024 - PRESENT</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BTech</span><br>SNIST-CSE<br>CGPA-8.31</li>
+                                <li><span>Intermediate</span><br>Sri Chaitanya Junior Kalasala<br>924 Marks</li>
+                                <li><span>Schooling</span><br>Dr KKR’S gowtham concept high school<br>GPA-9.5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="conatiner">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h2>ONLINE TRANSACTION FRAUDULANCE DETECTION SYSTEM</h2>
+                    <p>*Overview:* Developed a system to detect fraudulent transactions using the XGBoost algorithm and Streamlit for the user interface.
+                        <br>*Technologies:* XGBoost, Streamlit, Python</p>
+                    <a href="https://github.com/phanisrikanth9/Online-Transaction-Fraudulence-Detection-System">Learn more</a>
+                </div>
+                <div>
+                    <h2>Portfolio</h2>
+                    <p>A portfolio website showcasing my projects and skills in a visually appealing and functional manner.</p>
+                    <a href="#">Learn more</a>
+                </div>
+               <!--<div>
+                    <h2>Backed Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aut harum veritatis aperiam similique nam! Voluptas facilis veniam dolore sequi ipsum doloribus quo placeat sunt, voluptatibus dignissimos voluptate enim natus?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            -->
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class=""container>
+            <!--<h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connects you talented people around the world.
+                            Download it from playStore</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>-->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>phanisrikanth65@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>9381255761</p>
+                            <div class="soical-icons">
+                                <a href="https://www.linkedin.com/in/phani-srikanth-samayam-70942926a/"><i class="fa-brands fa-linkedin"></i></a><br>
+                                <a href="https://github.com/phanisrikanth9"><i class="fa-brands fa-github"></i></a>
+                              <!--  <a href="#"><i class="fa-brands fa-"></i></a> -->
+
+                            </div>
+                            <a href="c:\Users\SRIKANTH\Desktop\Desktop\RESUMES AND CVS\Resume SS.pdf" class="btn btn2">Download Resume</a>
+                       <!--</div>
+                        <div class="contact-right">
+                            <form action="">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                        </div>-->
+
+                    </div>
+                </div>
+            </div>
+
+      <!--</div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> laxmi@123</p>
+
+        </div>-->
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab1");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab1");
+    }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>  
+    
+</body>
+</html>
