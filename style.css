@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Basic Reset and Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* To position options menu relative to header */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links a, .options-button {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover, .options-button:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.options-button {
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-button i {
+    font-size: 18px;
+}
+
+#options-menu {
+    display: none;
+    position: absolute;
+    top: 50px; /* Adjust based on your header height */
+    left: 0; /* Aligns with the left edge of the header */
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 1000; /* Ensures menu is above other content */
+}
+
+#options-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+#options-menu a:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .options-button {
+        display: block;
+    }
+}
+
+  
+  body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  #education {
+    background-color: #1f1f1f; /* Dark gray to match the black theme */
+    padding: 30px 5%;
+    color: #e0e0e0; /* Light gray text for contrast */
+}
+
+#education h1 {
+    font-size: 28px; /* Smaller font size for the section title */
+    color: #ffffff; /* White for the section title */
+    margin-bottom: 20px;
+}
+
+.education-item {
+    background-color: #2e2e2e; /* Slightly lighter gray for boxes */
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.education-item h2 {
+    font-size: 18px; /* Smaller font size for item titles */
+    color: #ffffff; /* White for item titles */
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    font-size: 14px; /* Smaller font size for details */
+    color: #d0d0d0; /* Slightly lighter gray for details */
+    margin: 2px 0;
+}
+
+#achievements {
+    background-color: #1f1f1f; /* Dark gray to match the black theme */
+    padding: 30px 5%;
+    color: #e0e0e0; /* Light gray text for contrast */
+}
+
+#achievements h1 {
+    font-size: 28px; /* Smaller font size for the section title */
+    color: #ffffff; /* White for the section title */
+    margin-bottom: 20px;
+}
+
+.achievement-item {
+    background-color: #2e2e2e; /* Slightly lighter gray for boxes */
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-item h2 {
+    font-size: 18px; /* Smaller font size for item titles */
+    color: #ffffff; /* White for item titles */
+    margin-bottom: 5px;
+}
+
+.achievement-item a {
+    color: #1e90ff; /* Bright blue for links */
+    font-size: 14px; /* Smaller font size for links */
+    text-decoration: none;
+}
+
+.achievement-item a:hover {
+    text-decoration: underline;
+}
+
+#work-experience {
+    background-color: #1f1f1f; /* Dark gray to match the black theme */
+    padding: 30px 5%;
+    color: #e0e0e0; /* Light gray text for contrast */
+}
+
+#work-experience h1 {
+    font-size: 28px; /* Smaller font size for the section title */
+    color: #ffffff; /* White for the section title */
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    background-color: #2e2e2e; /* Slightly lighter gray for boxes */
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.experience-item h2 {
+    font-size: 18px; /* Smaller font size for item titles */
+    color: #ffffff; /* White for item titles */
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    font-size: 14px; /* Smaller font size for details */
+    color: #d0d0d0; /* Slightly lighter gray for details */
+    margin: 2px 0;
+}
+
+.experience-item a {
+    font-size: 14px; /* Match font size with other details */
+    color: #4a90e2; /* Blue color for links */
+    text-decoration: none;
+}
+
+.experience-item a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+/* General styling for sections */
+section {
+    padding: 30px 5%;
+    margin-bottom: 20px;
+}
+
+/* Header styling for each section */
+section h1 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Styling for lists within sections */
+section ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+section ul li {
+    background-color: #2e2e2e; /* Slightly lighter gray for items */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0; /* Light gray text */
+}
+
+section ul li:hover {
+    background-color: #3a3a3a; /* Darker gray on hover */
+}
+
+/* Specific styling for Competitions section */
+#competitions ul li {
+    background-color: #2e2e2e; /* Background color for list items */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#competitions ul li a {
+    color: #e0e0e0; /* Light gray text color */
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    gap: 8px; /* Space between text and icon */
+}
+
+#competitions ul li a i {
+    color: #8c8c8c; /* Icon color */
+    font-size: 14px; /* Icon size */
+}
+
+#competitions ul li a:hover {
+    color: #f5f5f5; /* Slightly lighter gray on hover */
+    background-color: #3a3a3a; /* Darker gray on hover for background */
+}
+
+#competitions ul li a:hover i {
+    color: #f5f5f5; /* Change icon color on hover */
+}
+
+/* Specific styling for Certificates section */
+#certificates ul li {
+    background-color: #2e2e2e; /* Background color for list items */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#certificates ul li a {
+    color: #e0e0e0; /* Light gray text color */
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    gap: 8px; /* Space between text and icon */
+}
+
+#certificates ul li a i {
+    color: #8c8c8c; /* Icon color */
+    font-size: 14px; /* Icon size */
+}
+
+#certificates ul li a:hover {
+    color: #f5f5f5; /* Slightly lighter gray on hover */
+    background-color: #3a3a3a; /* Darker gray on hover for background */
+}
+
+#certificates ul li a:hover i {
+    color: #f5f5f5; /* Change icon color on hover */
+}
+
+/* Specific styling for Languages section */
+#languages ul li {
+    background-color: #2e2e2e; /* Customize as needed */
+}
+
+/* Specific styling for Interests section */
+#interests ul li {
+    background-color: #2e2e2e; /* Customize as needed */
+}
+
+  /* Footer Styling */
+footer {
+    background-color: #262626;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff004f;
+    transform: translateY(-2px);
+}
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #121212;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .resume-btn {
+    border: 1px solid darkcyan;
+    padding: 5px 5px;
+    border-radius: 2px;
+  }
+  
+  section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  /* Add this to your existing CSS file */
+
+/* Skills section */
+#skills {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap if the width is insufficient */
+    gap: 20px;        /* Adds space between skill blocks */
+    justify-content: center; /* Center-align the skill blocks */
+  }
+  
+  .skill-block {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 10px 15px;  /* Adjust padding for smaller size */
+    border-radius: 20px; /* Curved borders */
+    font-size: 14px;     /* Reduce font size for smaller blocks */
+    width: calc(20% - 20px);  /* Each skill block takes up about a fifth of the row */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .skill-block:hover {
+    background-color: #444444;
+  }
+  
+  /* Make the skill blocks responsive for smaller screens */
+  @media (max-width: 768px) {
+    .skill-block {
+      width: calc(33.33% - 20px); /* On medium screens, each block takes up a third of the row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-block {
+      width: calc(50% - 20px);  /* On smaller screens, skill blocks will take up half the width */
+    }
+  }
+  
+  
+  #home {
+    text-align: center;
+  }
+  
+  .projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project-box {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 10px);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-box:hover {
+    background-color: #444444;
+  }
+  
+  .project-box h3 {
+    margin-bottom: 10px;
+  }
+  
+  #contact {
+    text-align: center;
+  }
+  
+.social a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Adjust the size as needed */
+  }
+  
+  .social a:hover {
+    color: #ddd; /* Change the hover color if you like */
+  }
+  
+  .resume-btn {
+    border: 1px solid darkcyan;
+    padding: 5px 5px;
+    border-radius: 2px;
+  }
+  
